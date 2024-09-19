@@ -6,13 +6,13 @@ if velocity < 0:
     print("Velocity must be positive!")
     exit(1)
 
-if velocity < 30:
-    category = "SLOW"
+if velocity > 120:
+    category = "VERY FAST"
+elif velocity > 60:
+    category = "FAST"
 elif velocity > 30:
     category = "MODERATE"
-    if velocity > 60:
-        category = "FAST"
-        if velocity > 120:
-            category = "VERY FAST"
+else:
+    category = "SLOW"
 
 print(category)
