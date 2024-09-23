@@ -10,7 +10,7 @@ element = 0
 
 if number == 0:
     print(a)
-elif number == 1 or number == 2:
+elif number == 1:
     print(b)
 else:
     for i in range(number-1):
