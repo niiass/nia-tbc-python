@@ -1,6 +1,6 @@
 number = int(input("Enter positive number: "))
 
-if number <= 0 or number >= 0:
+if number < 1 or number > 49:
     print("Number must be positive integer from 1 to 49")
     exit(1)
 
