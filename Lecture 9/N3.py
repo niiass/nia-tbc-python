@@ -7,14 +7,12 @@ x = turtle.Turtle()
 y = turtle.Turtle()
 t = turtle.Turtle()
 
-# Function to draw a point at (x, y)
 def draw_point(x, y, color, size):
     t.speed(0)
-    t.penup()  # Lift the pen to avoid drawing a line
-    t.goto(x, y)  # Move to the point (x, y)
-    t.dot(size, color)  # Draw the point with the specified size and color
+    t.penup()
+    t.goto(x, y)
+    t.dot(size, color)
 
-# Hide turtle and display the window
 t.hideturtle()
 
 def drawX():
@@ -53,4 +51,4 @@ for i in range(n):
 
 print(4*counter/n)
 
-time.sleep(20)
+time.sleep(10)
